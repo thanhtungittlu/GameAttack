@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.style-btn{
+    padding: 15px 15px;
+    background-color: rgb(14, 247, 177);
+    border: none;
+    font-size:20px;
+    font-weight:550;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(82, 81, 81, 0.8);
+}
+
+#main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+#player{
+    width:100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.player-1,.player-2{
+    width: 30%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#player .title{
+    font-size:40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+#player .blood{
+    width: 100%;
+    height: 40px;
+    text-align:center;
+    width: 100%;
+    -webkit-appearance: none;
+    border: none;
+      /* Set the progressbar to relative */
+    position:relative;
+}
+
+#player .blood:before {
+  content: attr(data-label);
+  vertical-align: 0;
+/*Position text over the progress bar */
+  position:absolute;
+  text-align: center;
+  top: 10px;
+}
+
+#player .blood::-webkit-progress-bar {
+  background-color: #d8d5d5;
+}
+
+#player .blood::-webkit-progress-value {
+  background-color: #12d82c;
+}
+
+
+#navigation{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height:80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#navigation .list-nav{
+    display: none;
+}
+
+.attack{
+    padding: 10px 15px;
+    margin-left: 30px;
+    background-color: rgb(240, 116, 15);
+}
+.special-attack{
+    padding: 10px 15px;
+    margin-left: 30px;
+    background-color: rgb(247, 28, 28);
+}
+.heal{
+    padding: 10px 15px;
+    margin-left: 30px;
+    background-color: rgb(247, 141, 159);
+}
+.give-up{
+    padding: 10px 15px;
+    margin-left: 30px;
+    background-color: #fff;
+}
+
+
+#status{
+    
+    max-height: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+
+}
+
+.monsterHits{
+    
+    width: 80%;
+    background-color: rgb(250, 171, 171);
+    text-align: center;
+    padding: 5px 0px;
+    margin: 2px 0px;
+    color:#ec0d0d;
+    font-weight: bold;
+}
+.playerHits{
+    width: 80%;
+    background-color: rgb(120, 235, 243);
+    text-align: center;
+    padding: 5px 0px;
+    margin: 2px 0px;
+    color: rgb(49, 28, 243);
+    font-weight: bold;
+}
